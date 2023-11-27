@@ -14,12 +14,14 @@ namespace AMS23_Carousel.Models
             IsActive = true;
         }
 
+        public CategoryModel()
+        {
+            
+        }
+
         public Guid Id { get; set; }
-        public string Description { get; set; }
-        public bool IsActive { get; set; }
-
-
-
+        public string Description { get; set; } = string.Empty;
+        public bool IsActive { get; set; } = true;
 
     }
 }

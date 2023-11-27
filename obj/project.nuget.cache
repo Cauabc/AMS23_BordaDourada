@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dZFhC2uugTS/KI4fbCHWbpRTjEKN063xsdt/KxSBksbsm9mXh7PoBh64erndThTNNWEJ8pC1CeMVRgSfSddNUQ==",
+  "dgSpecHash": "DNNzgZ2qisCyJOqfrdtLRaskQ4lTHoN46lI+PTf5Ho3TU5eDNvDMq0w8R2KZjd1dKH7g8g0ps7pLQQJbPl3B4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Caua\\Desktop\\ProjetoJeferson\\AMS23_BordaDourada\\AMS23_Carousel.csproj",
+  "projectFilePath": "C:\\Users\\Caua\\Desktop\\Projetos\\ProjetoJeferson\\AMS23_BordaDourada\\AMS23_Carousel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Caua\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Caua\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.11\\microsoft.data.sqlite.core.7.0.11.nupkg.sha512",
@@ -32,7 +32,11 @@
     "C:\\Users\\Caua\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Caua\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Caua\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Caua\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+    "C:\\Users\\Caua\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\Caua\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Caua\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Caua\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Caua\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,4 +1,7 @@
+using AMS23_BordaDourada.Data.Repository;
+using AMS23_BordaDourada.Models.Interfaces;
 using AMS23_Carousel.Data.Repository;
+using AMS23_Carousel.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +12,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDataContext>(
     option => option.UseSqlite(builder.Configuration.GetConnectionString("DefaultContext"))
 );
+
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 
@@ -29,6 +35,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Login}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

@@ -1,39 +1,58 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using AMS23_BordaDourada.Data.Repository;
+using AMS23_BordaDourada.Models.Interfaces;
 using AMS23_Carousel.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace AMS23_Carousel.Controllers
 {
-    [Route("[controller]")]
     public class CategoryController : Controller
     {
-        private readonly ILogger<CategoryController> _logger;
-
-        public CategoryController(ILogger<CategoryController> logger)
+        private readonly ICategoryRepository _categoryRepository;
+        public CategoryController(ICategoryRepository categoryRepository)
         {
-            _logger = logger;
+            _categoryRepository = categoryRepository;
         }
-
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
+        {
+            var allCategories = await _categoryRepository.GetAll();
+            return View(allCategories);
+        }
+        public IActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
-        
-        public IActionResult Add(CategoryModel category){
-            return View();
+        public async Task<IActionResult> Create(CategoryModel request)
+        {
+            _categoryRepository.Add(request);
+            await _categoryRepository.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Edit(Guid id)
         {
-            return View("Error!");
+            CategoryModel category = _categoryRepository.Get(id);
+            return View(category);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(CategoryModel request)
+        {
+            _categoryRepository.Update(request);
+            await _categoryRepository.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+        
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var categoryToDelete = _categoryRepository.Get(id);
+            _categoryRepository.Delete(categoryToDelete);
+            await _categoryRepository.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }

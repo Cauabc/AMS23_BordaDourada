@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Caua\\Desktop\\ProjetoJeferson\\AMS23_BordaDourada\\AMS23_Carousel.csproj": {}
+    "C:\\Users\\Caua\\Desktop\\Projetos\\ProjetoJeferson\\AMS23_BordaDourada\\AMS23_Carousel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Caua\\Desktop\\ProjetoJeferson\\AMS23_BordaDourada\\AMS23_Carousel.csproj": {
+    "C:\\Users\\Caua\\Desktop\\Projetos\\ProjetoJeferson\\AMS23_BordaDourada\\AMS23_Carousel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Caua\\Desktop\\ProjetoJeferson\\AMS23_BordaDourada\\AMS23_Carousel.csproj",
+        "projectUniqueName": "C:\\Users\\Caua\\Desktop\\Projetos\\ProjetoJeferson\\AMS23_BordaDourada\\AMS23_Carousel.csproj",
         "projectName": "AMS23_Carousel",
-        "projectPath": "C:\\Users\\Caua\\Desktop\\ProjetoJeferson\\AMS23_BordaDourada\\AMS23_Carousel.csproj",
+        "projectPath": "C:\\Users\\Caua\\Desktop\\Projetos\\ProjetoJeferson\\AMS23_BordaDourada\\AMS23_Carousel.csproj",
         "packagesPath": "C:\\Users\\Caua\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Caua\\Desktop\\ProjetoJeferson\\AMS23_BordaDourada\\obj\\",
+        "outputPath": "C:\\Users\\Caua\\Desktop\\Projetos\\ProjetoJeferson\\AMS23_BordaDourada\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Caua\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -68,6 +68,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -76,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
