@@ -1,0 +1,34 @@
+﻿@model List<CategoryModel>
+
+<div class="container">
+  <a asp-controller="Category" asp-action="Create" role="button" class="btn btn-primary mt-2 mb-2">Adicionar Tarefa</a>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Descrição</th>
+        <th scope="col">Está ativa?</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach (var category in Model)
+      {
+        <tr>
+          <th scope="row">@category.Id</th>
+          <td>@category.Description</td>
+          <td>@(category.IsActive ? "Sim" : "Não")</td>
+          <td>
+            <div class="btn-group" role="group" aria-label="Actions">
+              <a role="button" class="btn btn-primary" asp-controller="Category" asp-action="Edit"
+                asp-route-id="@category.Id">Editar</a>
+              <a role="button" class="btn btn-danger" asp-controller="Category" asp-action="Delete"
+                asp-route-id="@category.Id">Deletar</a>
+            </div>
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+
+</div>
